@@ -130,7 +130,7 @@ export default function Home() {
         </div>
 
         <footer className='mt-14 md:mt-20 flex justify-center text-sm md:text-base'>
-          <p>/* built with &lt;3 by danny */</p>
+          <p>{"/* built with <3 by danny */"}</p>
         </footer>
 
   
