@@ -19,11 +19,6 @@ export default function Home() {
   const [time, setTime] = useState(current)
 
 
-  const interval = setInterval(() => {
-    setTime(new Date())
-  }, 1000);
-  
-
   function handleSend(){
     
     if (emailRef.current.value && messageRef.current.value){
@@ -68,7 +63,6 @@ export default function Home() {
           </p>
 
           <p className='mt-6'>currently:</p>
-          <p>[{time.toLocaleTimeString()} @myhouse]</p>
           <p>[cs @uci]</p>
           <p>[sde intern @amazon]</p>
           
@@ -83,7 +77,7 @@ export default function Home() {
         {/* about me section ~ END */}
 
         {/* project section ~ START */}
-        <h1 className="mt-12 md:mt-16">&lt;projects&gt;</h1>
+        <h1 className="mt-12 md:mt-16 mb-4">&lt;projects&gt;</h1>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
           <Project 
             name="aniwatch"
@@ -102,7 +96,7 @@ export default function Home() {
         {/* project section ~ END */}
 
         {/* contact section ~ START*/}
-        <h1 className="mt-12 md:mt-16">&lt;contact&gt;</h1>
+        <h1 className="mt-12 md:mt-16 mb-4">&lt;contact&gt;</h1>
         <div className='bg-slate-300 flex flex-row p-4 rounded-xl dark:bg-[#252525] border border-1 dark:border-[#404040] border-slate-200'>
           
           <div className='flex-[0_0_25%]'>
@@ -130,7 +124,7 @@ export default function Home() {
         </div>
 
         <footer className='mt-14 md:mt-20 flex justify-center text-sm md:text-base'>
-          <p>{"/* built with <3 by danny */"}</p>
+          <p>{"/* built with <3 by me */"}</p>
         </footer>
 
   
