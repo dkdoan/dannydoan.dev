@@ -3,7 +3,7 @@
 export default function Project(props){
 
     const frameworks = props.tools?.map((tool) => {
-        return (<p className="bg-white px-2 py-1 m-0.5 rounded-xl text-sm dark:text-black">{tool}</p>)
+        return (<p key={props.name} className="bg-white px-2 py-1 m-0.5 rounded-xl text-sm dark:text-black">{tool}</p>)
     })
     return (
         <div className="dark:bg-[#252525] bg-slate-300 p-4 rounded-xl flex flex-col border border-1 dark:border-[#404040] border-slate-200 hover:shadow-lg hover:shadow-blue-600

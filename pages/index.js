@@ -60,9 +60,9 @@ export default function Home() {
       <main className='max-w-3xl mx-auto p-10 mt-12 md:mt-16 text-md md:text-lg dark:text-white'>
         {/* about me section ~ START*/}
         <div>
-          <h1 className='text-3xl md:text-4xl'>hey, i'm <span className='text-blue-600 dark:text-[#5585FF]'>danny</span>.</h1>
+          <h1 className='text-3xl md:text-4xl'>hey, i&apos;m <span className='text-blue-600 dark:text-[#5585FF]'>danny</span>.</h1>
           <p className='mt-6'>
-            i'm a california-based developer studying computer science @uci. i'm a big fan of all things
+            i&apos;m a california-based developer studying computer science @uci. i&apos;m a big fan of all things
             full stack whether it be writing RESTful apis in express.js or designing a responsive front end with <span className='line-through'>react.js</span> next.js.
             i like thrillers, sushi, and the la rams.
           </p>
@@ -130,7 +130,7 @@ export default function Home() {
         </div>
 
         <footer className='mt-14 md:mt-20 flex justify-center text-sm md:text-base'>
-          /* built with &lt;3 by danny */
+          <p>/* built with &lt;3 by danny */</p>
         </footer>
 
   
