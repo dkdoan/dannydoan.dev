@@ -12,7 +12,7 @@ export default function Project(props){
                 <p>{props.name}↗️</p>
                 <p>demo▶️</p>
             </div>
-            <p className="text-base mt-3 mb-3">{props.desc}</p>
+            <p className="text-sm md:text-base mt-3 mb-3">{props.desc}</p>
 
             {/* container for frameworks*/}
             <div className="mt-auto flex flex-wrap">

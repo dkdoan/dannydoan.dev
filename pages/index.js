@@ -14,10 +14,6 @@ export default function Home() {
   const [emptyEmail, setEmptyEmail] = useState(false)
   const [emptyMsg, setEmptyMsg] = useState(false)
   
-  let current = new Date();
-
-  const [time, setTime] = useState(current)
-
 
   function handleSend(){
     
@@ -52,7 +48,7 @@ export default function Home() {
         
       </Head>
       
-      <main className='max-w-3xl mx-auto p-10 mt-12 md:mt-16 text-md md:text-lg dark:text-white'>
+      <main className='max-w-3xl mx-auto p-8 mt-12 md:mt-16 text-md md:text-lg dark:text-white'>
         {/* about me section ~ START*/}
         <div>
           <h1 className='text-3xl md:text-4xl'>hey, i&apos;m <span className='text-blue-600 dark:text-[#5585FF]'>danny</span>.</h1>
@@ -66,7 +62,7 @@ export default function Home() {
           <p>[cs @uci]</p>
           <p>[sde intern @amazon]</p>
           
-          <div className='flex mt-6 space-x-4 md:space-x-8'>
+          <div className='flex mt-6 space-x-4 md:space-x-8 underline'>
             <a href="https://www.linkedin.com/in/danny-doan/">linkedin↗️</a>
             <a href="https://github.com/dkdoan">github↗️</a>
             <a href="mailto:dannykdoan@gmail.com">email↗️</a>
@@ -77,7 +73,7 @@ export default function Home() {
         {/* about me section ~ END */}
 
         {/* project section ~ START */}
-        <h1 className="mt-12 md:mt-16 mb-4">&lt;projects&gt;</h1>
+        <h1 className="mt-14 md:mt-16 mb-3 md:mb-4">&lt;projects&gt;</h1>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
           <Project 
             name="aniwatch"
@@ -96,7 +92,7 @@ export default function Home() {
         {/* project section ~ END */}
 
         {/* contact section ~ START*/}
-        <h1 className="mt-12 md:mt-16 mb-4">&lt;contact&gt;</h1>
+        <h1 className="mt-14 md:mt-16 mb-3 md:mb-4">&lt;contact&gt;</h1>
         <div className='bg-slate-300 flex flex-row p-4 rounded-xl dark:bg-[#252525] border border-1 dark:border-[#404040] border-slate-200'>
           
           <div className='flex-[0_0_25%]'>
